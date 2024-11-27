@@ -21,6 +21,10 @@ section:last-of-type {
     padding-bottom: 4rem;
 }
 
+#linkki:visited {
+    color: purple;
+}
+
 /* hero-sektio */
 
 .taustakuva {
