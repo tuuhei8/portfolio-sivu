@@ -1,0 +1,130 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* navbar */
+
+.navbarDark {
+    background-color: black;
+}
+
+/* body */
+
+body {
+    font-family: 'lato', sans-serif;
+}
+
+section {
+    padding-bottom: 3rem;
+}
+
+section:last-of-type {
+    padding-bottom: 4rem;
+}
+
+/* hero-sektio */
+
+.taustakuva {
+    height: 100vh;
+    background: url('img/kuva1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.hero_otsikko {
+    padding-top: 10rem;
+    font-size: 4.5rem;
+}
+
+.hero_kuvaus {
+    font-size: 2rem;
+}
+
+.hero-teksti {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.tietojaKuva {
+    width: 100%;
+}
+
+/* palvelut */
+
+.palvelutTeksti {
+    height: 280px;
+    cursor: pointer;
+}
+
+.palvelutIkoni {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .palvelutIkoni {
+    color: #008000;
+}
+
+.palvelutTeksti:hover {
+    border: 1px solid #008000;
+}
+
+/* footer */
+
+footer > div > div > a > i {
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+footer > div > div > a > i:hover {
+    color: blue;
+}
+
+/* tooltip teksti */
+
+.tooltipteksti {
+    position: absolute;
+    visibility: hidden;
+    width: 80px;
+    color: #fff;
+    background-color: grey;
+    padding: 5px 0;
+    border-radius: 6px;
+    text-align: center;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -40px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-style: normal;
+}
+
+footer > div > div > a > i:hover .tooltipteksti {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipteksti::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent grey transparent;
+}
