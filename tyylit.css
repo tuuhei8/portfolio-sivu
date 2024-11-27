@@ -60,7 +60,6 @@ section:last-of-type {
 
 .palvelutTeksti {
     height: 280px;
-    cursor: pointer;
 }
 
 .palvelutIkoni {
@@ -89,7 +88,7 @@ footer > div > div > a > i {
 }
 
 footer > div > div > a > i:hover {
-    color: blue;
+    color: skyblue;
 }
 
 /* tooltip teksti */
